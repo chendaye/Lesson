@@ -37,7 +37,9 @@ namespace one{
 }
 
 namespace two{
-    /*使用依赖注入的思路是应用程序用到Foo类，Foo类需要Bar类，Bar类需要Bim类，那么先创建Bim类，再创建Bar类并把Bim注入，再创建Foo类，并把Bar类注入，再调用Foo方法，Foo调用Bar方法，接着做些其它工作。*/
+    /*使用依赖注入的思路是应用程序用到Foo类，Foo类需要Bar类，Bar类需要Bim类，
+    那么先创建Bim类，再创建Bar类并把Bim注入，再创建Foo类，并把Bar类注入，
+    再调用Foo方法，Foo调用Bar方法，接着做些其它工作。*/
 // 代码【2】
     class Bim
     {
@@ -82,9 +84,13 @@ namespace two{
     $foo = new Foo(new Bar(new Bim()));
     $foo->doSomething(); // Bim::doSomething|Bar::doSomething|Foo::doSomething
 
-    /*这就是控制反转模式。依赖关系的控制反转到调用链的起点。这样你可以完全控制依赖关系，通过调整不同的注入对象，来控制程序的行为。例如Foo类用到了memcache，可以在不修改Foo类代码的情况下，改用redis。
+    /*这就是控制反转模式。依赖关系的控制反转到调用链的起点。
+    这样你可以完全控制依赖关系，通过调整不同的注入对象，来控制程序的行为。
+    例如Foo类用到了memcache，可以在不修改Foo类代码的情况下，改用redis。
 
-    使用依赖注入容器后的思路是应用程序需要到Foo类，就从容器内取得Foo类，容器创建Bim类，再创建Bar类并把Bim注入，再创建Foo类，并把Bar注入，应用程序调用Foo方法，Foo调用Bar方法，接着做些其它工作.
+    使用依赖注入容器后的思路是应用程序需要到Foo类，就从容器内取得Foo类，
+    容器创建Bim类，再创建Bar类并把Bim注入，再创建Foo类，并把Bar注入，
+    应用程序调用Foo方法，Foo调用Bar方法，接着做些其它工作.
 
     总之容器负责实例化，注入依赖，处理依赖关系等工作。*/
 }
@@ -108,7 +114,8 @@ namespace three{
         }
     }
 
-    /*这段代码使用了魔术方法，在给不可访问属性赋值时，__set() 会被调用。读取不可访问属性的值时，__get() 会被调用。*/
+    /*这段代码使用了魔术方法，在给不可访问属性赋值时，
+    __set() 会被调用。读取不可访问属性的值时，__get() 会被调用。*/
     $c = new Container();
 
     $c->bim = function () {
@@ -236,7 +243,7 @@ namespace five{
          *
          * @param string $className
          * @return object
-         * @throws Exception
+         * @throws \Exception
          */
         public function build($className)
         {
@@ -246,15 +253,15 @@ namespace five{
                 return $className($this);
             }
 
-            /** @var ReflectionClass $reflector */
-            $reflector = new ReflectionClass($className);
+            /** @var \ReflectionClass $reflector */
+            $reflector = new \ReflectionClass($className);
 
             // 检查类是否可实例化, 排除抽象类abstract和对象接口interface
             if (!$reflector->isInstantiable()) {
-                throw new Exception("Can't instantiate this.");
+                throw new \Exception("Can't instantiate this.");
             }
 
-            /** @var ReflectionMethod $constructor 获取类的构造函数 */
+            /** @var \ReflectionMethod $constructor 获取类的构造函数 */
             $constructor = $reflector->getConstructor();
 
             // 若无构造函数，直接实例化并返回
@@ -346,7 +353,9 @@ namespace five{
 
     $foo->doSomething(); // Bim::doSomething|Bar::doSomething|Foo::doSomething
 
-    /*以上代码的原理参考PHP官方文档：反射，PHP 5 具有完整的反射 API，添加了对类、接口、函数、方法和扩展进行反向工程的能力。 此外，反射 API 提供了方法来取出函数、类和方法中的文档注释。
+    /*以上代码的原理参考PHP官方文档：
+    反射，PHP 5 具有完整的反射 API，添加了对类、接口、函数、方法和扩展进行反向工程的能力。
+    此外，反射 API 提供了方法来取出函数、类和方法中的文档注释。
 
     若想进一步提供一个数组访问接口，如$di->foo可以写成$di'foo']，则需用到[ArrayAccess（数组式访问）接口
 
