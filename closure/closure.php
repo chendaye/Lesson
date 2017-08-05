@@ -5,6 +5,9 @@ $fun = function($var){
 };
 $fun('long shen!');
 
+echo gettype($fun);    // object
+echo get_class($fun);  // Closure
+
 //实现闭包
 //例一
 //在函数里定义一个匿名函数，并且调用它
@@ -49,7 +52,8 @@ exp_three(function($var){echo $var;}, '也可以直接将匿名函数进行传�
 // 闭包可以保存所在代码块上下文的一些变量和值。PHP在默认情况下，匿名函数不能调用所在代码块的上下文变量，而需要通过使用use关键字。
 function exp_four(){
     $rmb = '连接闭包和外界变量的关键字：USE';
-    $us = '闭包可以保存所在代码块上下文的一些变量和值。PHP在默认情况下，匿名函数不能调用所在代码块的上下文变量，而需要通过使用use关键字。';
+    $us = '闭包可以保存所在代码块上下文的一些变量和值。
+    PHP在默认情况下，匿名函数不能调用所在代码块的上下文变量，而需要通过使用use关键字。';
     $fun = function() use ($rmb,$us) {
         echo $rmb;
         echo $us;
