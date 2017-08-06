@@ -13,4 +13,9 @@ trait B
     {
         echo 'trait';
     }
+
+    public function sleep()
+    {
+        echo 'B';
+    }
 }

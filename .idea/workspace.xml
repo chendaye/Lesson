@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ddf0f68-8a71-44c2-a77f-f94284fa481f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/closure/example.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/traits/A.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/traits/B.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/traits/Test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/traits/sumary.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/trait/sumary.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/traits/C.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/traits/D.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/traits/trait1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/traits/trait2.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/closure/closure.php" afterPath="$PROJECT_DIR$/closure/closure.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/traits/A.php" afterPath="$PROJECT_DIR$/traits/A.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/traits/B.php" afterPath="$PROJECT_DIR$/traits/B.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/traits/Test.php" afterPath="$PROJECT_DIR$/traits/Test.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,8 +54,18 @@
       <file leaf-file-name="A.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/traits/A.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="23" />
+            <state relative-caret-position="425">
+              <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="C.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/traits/C.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -64,8 +74,38 @@
       <file leaf-file-name="Test.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/traits/Test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+            <state relative-caret-position="473">
+              <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trait1.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/traits/trait1.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trait2.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/traits/trait2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="D.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/traits/D.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -74,18 +114,8 @@
       <file leaf-file-name="B.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/traits/B.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sumary.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/closure/sumary.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="34" />
+            <state relative-caret-position="450">
+              <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -137,8 +167,12 @@
         <option value="$PROJECT_DIR$/traits/one/A.php" />
         <option value="$PROJECT_DIR$/traits/one/B.php" />
         <option value="$PROJECT_DIR$/traits/one/Test.php" />
+        <option value="$PROJECT_DIR$/traits/C.php" />
         <option value="$PROJECT_DIR$/traits/A.php" />
         <option value="$PROJECT_DIR$/traits/B.php" />
+        <option value="$PROJECT_DIR$/traits/trait1.php" />
+        <option value="$PROJECT_DIR$/traits/trait2.php" />
+        <option value="$PROJECT_DIR$/traits/D.php" />
         <option value="$PROJECT_DIR$/traits/Test.php" />
       </list>
     </option>
@@ -174,20 +208,6 @@
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lesson" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lesson" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="traits" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Lesson" />
@@ -312,19 +332,18 @@
       <workItem from="1501683523059" duration="8209000" />
       <workItem from="1501770944388" duration="7612000" />
       <workItem from="1501856362921" duration="10918000" />
-      <workItem from="1501916537886" duration="4749000" />
+      <workItem from="1501916537886" duration="7054000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31488000" />
+    <option name="totallyTimeSpent" value="33793000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17767988" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17767988" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -354,38 +373,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dependency_injection/Di/four/B.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dependency_injection/Di/four/C.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dependency_injection/Di/three/Test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="28" column="42" lean-forward="false" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/closure/sumary.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="60" column="15" lean-forward="false" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dependency_injection/di-one.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -399,7 +386,7 @@
         <state relative-caret-position="1775">
           <caret line="78" column="2" lean-forward="true" selection-start-line="78" selection-start-column="2" selection-end-line="83" selection-end-column="7" />
           <folding>
-            <element signature="e#7#193#0#PHP" expanded="true" />
+            <element signature="e#7#193#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -489,7 +476,7 @@
         <state relative-caret-position="9325">
           <caret line="380" column="7" lean-forward="false" selection-start-line="380" selection-start-column="7" selection-end-line="380" selection-end-column="7" />
           <folding>
-            <element signature="e#7#193#0#PHP" expanded="true" />
+            <element signature="e#7#193#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -641,7 +628,7 @@
         <state relative-caret-position="1775">
           <caret line="78" column="2" lean-forward="false" selection-start-line="78" selection-start-column="2" selection-end-line="83" selection-end-column="7" />
           <folding>
-            <element signature="e#7#193#0#PHP" expanded="true" />
+            <element signature="e#7#193#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -742,26 +729,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/traits/C.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/traits/A.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="425">
+          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/traits/B.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="450">
+          <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traits/trait1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traits/trait2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traits/D.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/traits/Test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        <state relative-caret-position="473">
+          <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
           <folding />
         </state>
       </provider>

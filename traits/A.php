@@ -1,6 +1,6 @@
 <?php
 namespace traits;
-class A
+class A extends C
 {
     use B;
 
@@ -11,5 +11,10 @@ class A
 
     public function eat(){
         echo 'class';
+    }
+
+    public function sleep()
+    {
+        echo 'A';
     }
 }
