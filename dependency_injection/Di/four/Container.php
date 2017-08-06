@@ -102,15 +102,23 @@ class Container
             $dependency = $parameter->getClass();
 
             if(is_null($dependency)) {
-                //参数不是类 获取默认值
-                if($parameter->isDefaultValueAvailabele()) $dependencies[] = $parameter->getDefaultValue();
-                //没有默认值抛出异常
-                throw  new \Exception("参数解析失败！");
+                // 是变量,有默认值则设置默认值
+                $dependencies[] = $this->resolveNonClass($parameter);
             }else{
                 //如果参数是类的显然 就要递归的来解析 所以调用 bind 方法
                 $dependencies[] = $this->bind($parameter);
             }
         }
         return $dependencies;
+    }
+
+    public function resolveNonClass($parameter)
+    {
+        // 有默认值则返回默认值
+        if ($parameter->isDefaultValueAvailable()) {
+            return $parameter-> ();
+        }
+
+        throw new \Exception('I have no idea what to do here.');
     }
 }
