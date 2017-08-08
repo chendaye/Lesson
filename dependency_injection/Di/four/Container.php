@@ -116,7 +116,7 @@ class Container
     {
         // 有默认值则返回默认值
         if ($parameter->isDefaultValueAvailable()) {
-            return $parameter-> ();
+            return $parameter->getDefaultValue();
         }
 
         throw new \Exception('I have no idea what to do here.');

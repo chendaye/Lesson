@@ -117,4 +117,30 @@ Compsoer\ClassLoader 会优先查看 autoload_classmap 中所有生成的注册�
 
 所以当打了 composer dump-autoload -o 之后，
 composer 就会提前加载需要的类并提前返回。这样大大减少了 IO 和深层次的 loop。
+
+require-dev (root-only)
+这个列表是为开发或测试等目的，额外列出的依赖。“root 包”的 require-dev 默认是会被安装的。
+然而 install 或 update 支持使用 --no-dev 参数来跳过 require-dev 字段中列出的包
+
+
+一个脚本，在 Composer 中，可以是一个 PHP 回调（定义为静态方法）或任何命令行可执行的命令。
+脚本对于在
+ 
+ Composer 运行过程中，执行一个资源包的自定义代码或包专用命令是非常有用的。
+
+**注意：**只有在根包的 composer.json 中定义的脚本才会被执行。
+即便根包的外部依赖定义了其自身的脚本，Composer 也不会去执行这些额外的脚本
+
+ "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+    
+    
+    optimize 命令把常用加载的类合并到一个文件里，通过减少文件的加载，来提高运行效率：
+
+php artisan optimize --force
+
+php artisan optimize  生成 autoload_classmap.php  文件夹 和命名空间的映射  不用动态解析 psr-4
 EOT;
