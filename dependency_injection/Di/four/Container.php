@@ -106,7 +106,7 @@ class Container
                 $dependencies[] = $this->resolveNonClass($parameter);
             }else{
                 //如果参数是类的显然 就要递归的来解析 所以调用 bind 方法
-                $dependencies[] = $this->bind($parameter);
+                $dependencies[] = $this->bind($dependency->name);
             }
         }
         return $dependencies;
